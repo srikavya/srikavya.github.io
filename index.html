@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CollabLearn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="land">
+  <header data-role="header">
+    <h1>CollabLearn</h1>
+  </header>
+  <article data-role="content">
+    <div id="land_intro">
+      Using CollabLearn, you can learn new technologies along side your friends. It will be fun, collaborative and effective
+    </div>
+
+            <a href="#dash" class="ui-btn ui-btn-active" data-transition="flip" style="background-color: #38C; color: #FFF; text-shadow: none;"><i class="fa fa-facebook fa-2x" style="margin-right: 10px;"></i> Connect with Facebook</a>
+
+</article>
+</div><!-- Page Land -->
+
+<div data-role="page" id="dash">
+  <header data-role="header">
+    <h1 style="text-align: center;">CollabLearn</h1>
+  </header>
+  <article data-role="content">
+    <h1 style="text-align: center;">What do you want to learn?</h1>
+
+    <form method="post" action="demoform.asp">
+      <input type="text" name="fname" id="fname">
+      <a href="#collab" class="ui-btn" data-transition="slide">Start Learning</a>
+    </form>
+  </article>
+  <footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="home" class="ui-btn-active">Home</a></li>
+        <li><a href="#collab" data-icon="grid" data-transition="slide">Collaborate</a></li>
+      </ul>
+    </nav>
+  </footer>
+</div><!-- Page Dash -->
+
+<div data-role="page" id="collab">
+  <header data-role="header">
+    <h1>Dashboard</h1>
+  </header>
+  <article data-role="content">
+    <ul data-role="listview" >
+      <li>
+        <a href="#dog">
+        <h1>Miniature Doberman Pinscher</h1>
+        <i class="fa fa-camera-retro fa-5x"></i>
+        <p>This is what happens when a
+        friend brings a dog to the studio.</p>
+        </a>
+      </li>
+      <li>
+        <a href="#gummies">
+        <h1>Gummy Bears</h1>
+        <i class="fa fa-camera-retro fa-5x"></i>
+        <p>Three different poster boards...mirror for reflection,
+        black for background white for highlights</p>
+        </a>
+      </li>
+    </ul>
+  </article>
+  <footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#dash" data-icon="home" data-transition="slide">Home</a></li>
+        <li><a href="#" data-icon="grid" class="ui-btn-active">Photos</a></li>
+      </ul>
+    </nav>
+  </footer>
+</div><!-- Page Collab -->  
+</body>
+</html>
