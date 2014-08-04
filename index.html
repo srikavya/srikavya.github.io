@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -18,7 +17,7 @@
   </header>
   <article data-role="content">
     <div id="land_intro">
-      Using RunWithFriend, you can learn run along side your friends. It will be fun, collaborative and effective
+      Using RunWithFriend, you can schedule your runs with your friend along side your friends. Connect with facebook account to run with your friend
     </div>
 
             <a href="#dash" class="ui-btn ui-btn-active" data-transition="flip" style="background-color: #38C; color: #FFF; text-shadow: none;"><i class="fa fa-facebook fa-2x" style="margin-right: 10px;"></i> Connect with Facebook</a>
@@ -30,12 +29,31 @@
   <header data-role="header">
     <h1 style="text-align: center;">RunWithFriend</h1>
   </header>
+      <a href="#popupBasic" data-rel="popup" class="ui-btn" data-transition="pop">Schedule Run</a>
+<div data-role="popup" id="popupBasic">
+
+
   <article data-role="content">
     <h1 style="text-align: center;">Schedule a run</h1>
+    <label for="date">Date:</label>
+<input type="date" name="date" id="date" value="">
+<label for="number-pattern">Number + [0-9]* pattern:</label>
+<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+<label for="select-choice-1" class="select">Select, native menu</label>
+<select name="select-choice-1" id="select-choice-1">
+    <option value="standard">Standard: 7 day</option>
+    <option value="rush">Rush: 3 days</option>
+    <option value="express">Express: next day</option>
+    <option value="overnight">Overnight</option>
+</select>
+<label for="time">Time:</label>
+<input type="time" name="time" id="time" value="">
+<a href="#" data-rel="back" class="ui-btn ui-btn-a ui-btn-inline">Cancel</a>
+<a href="#collab" class="ui-btn ui-btn-b ui-btn-inline">Submit</a>
+  </div>
 
     <form method="post" action="demoform.asp">
       <input type="text" name="fname" id="fname">
-      <a href="#collab" class="ui-btn" data-transition="slide">Schedule Run</a>
     </form>
   </article>
   <footer data-role="footer" data-position="fixed">
